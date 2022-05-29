@@ -1,0 +1,20 @@
+{
+  "name": "chapter3",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "webpack": "^4.42.1",
+    "electron-webpack": "^2.8.2",
+    "electron": "8.1.0"
+  },
+  "scripts": {
+    "start": "electron-webpack dev",
+    "build": "electron-webpack build"
+  },
+  "electronWebpack": {
+    "renderer": {
+      "template": "src/renderer/index.html"
+    }
+  }
+}

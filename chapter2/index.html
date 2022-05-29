@@ -27,6 +27,8 @@
   let win = null
   document.querySelector('#makeNewWindow').addEventListener('click',function() {
     win = new remote.BrowserWindow({
+      // parent: remote.getCurrentWindow(),
+      // modal: true,
       webPreferences: { nodeIntegration: true }
     })
     win.loadFile('index.html')
